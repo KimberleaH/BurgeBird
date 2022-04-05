@@ -6,17 +6,88 @@
   </head>
 
   <body>
-    <aside>
-      This is the menu
+    <aside class="menu"> <!-- The menu/nav will be a sidebar on the left -->
+      <h1>Burge Bird Rescue</h1>
+
+      <nav> <!-- navigation -->
+        <a href="index.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="support.html">Support Our Mission</a>
+        <a href="adoption.html">Adoptions</a>
+        <a href="#">Basic Care Sheets</a>
+        <a href="#">Birds We Helped</a>
+        <a href="#">The Rescue Room</a>
+        <a href="#">Sanctuary Birds</a>
+        <a href="#">Veterinary Practice</a>
+      </nav>
+
+      <!-- nonprofit button -->
+      <a href="https://greatnonprofits.org/org/burge-bird-rescue"><img src="resources/images/NonProfit2018.png"></a>
+
+      <div class="contact"> <!-- contact info -->
+        <p>13833 S 71 Hwy <br> Grandview MO 64030</p>
+      </div>
     </aside>
 
 
-    <main>
-      This will have the info
+    <!-- This heading will overlap the <main> container -->
+    <h2 class="overlap">Support Our Mission</h2>
+    
+    
+    <main> <!-- Main content -->
+      <div class="support"> <!-- Vote for us section -->
+        <h4>Vote For Us!</h4>
+        <p>Please vote for and feature us on <strong id="givingcircle">MyGivingCircle</strong> so we can get a chance to receive a donation.
+          The more votes the better!</p>
+      </div>
+
+      <div class="flex support" id="flex-support"> <!-- Sponsor and Gift sections will be in a flexbox-->
+        
+        <div> <!-- Sponsor section to donate monthly -->
+          <img src="resources/images/pexels-gabriel-frank-11031990.jpg">
+
+          <div class="donate-text"> <!-- container for text that will have a white border -->
+            <h3>Become a Rescue Bird Sponsor</h3>
+            <p>Choose an amount you'd like to automatically donate each month to help our birds.</p>
+
+            <select name="sponsor" id="sponsor-select"> <!-- Drop down menu -->
+              <option value="little">Little Bird: $10 USD Monthly</option>
+              <option value="medium">Medium Bird: $25 USD Monthly</option>
+              <option value="big">Big Burge: $50 USD Monthly</option>
+            </select>
+
+            <img src="resources/images/3d625b43cc9040c0fabfd53afa1439b5.png"> <!-- Payment forms supported -->
+            <button class="donate" type="button">Donate</button> <!-- Button -->
+          </div>
+        </div>
+
+        <div> <!-- Make a gift section, one time donation -->
+          <img src="resources/images/pexels-valeria-boltneva-860605.jpg">
+
+          <div class="donate-text"> <!-- container for text that will have a white border -->
+            <h3>Make a Gift</h3>
+            <p>Make a tax-deductible contribution using PayPal to help our birds.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div> <!-- Passive donation options -->
+        <h4>Go Shopping!</h4>
+        <p>Did you know that you can support us by shopping and surfing the web? You sure can! When you 
+          choose Burge Bird Rescue as your charity you generate earnings that are donated to our organization 
+          with these platforms:</p>
+
+        <div class="flex" id="flex-shop"> <!-- shopping platforms flexbox-->
+          <img class="shop" src="resources/images/goodsearch.jpg"> <!-- Good Search img link -->
+          <img class="shop" src="resources/images/givingassistant2.jpg"> <!-- Giving Assistant img link -->
+          <img class="shop" src="resources/images/amazonsmile.jpg"> <!-- Amazon Smile img link -->
+        </div>
+      </div>
     </main>
 
 
-    <footer>
+    <footer> <!-- Footer -->
       <span>BurgeBirdRescue</span> <span>Designed by Kimberlea Heili 2022</span>
     </footer>
   </body>
